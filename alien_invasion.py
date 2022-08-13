@@ -7,6 +7,7 @@ from ship import Ship
 from character import Character
 from bullet import Bullet
 
+
 class AlienInvasion:
     """OVerall class to manage game assets and behavior"""
 
@@ -34,7 +35,6 @@ class AlienInvasion:
             self.ship.update()
             self._update_bullets()
             self._update_screen()
-
 
     def _check_events(self):
         """Respond to keypresses and mouse events"""
@@ -78,6 +78,7 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
         # print(len(self.bullets))
+
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
         # Redraw the screen during each pass through the loop.
