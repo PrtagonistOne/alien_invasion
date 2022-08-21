@@ -7,7 +7,8 @@ class GameStats:
         self.ships_left = None
         self.settings = ai_game.settings
         self.reset_stats()
-
+        # High score should never be reset.
+        self.high_score = 0
         # Start Alien Invasion in an active state.
         self.game_active = True
 
